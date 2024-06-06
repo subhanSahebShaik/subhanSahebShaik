@@ -41,9 +41,9 @@ Manage Faculty data in an easy way, with interactive and easy to use user interf
 
 <hr/>
 
-You could see my [Resume](https://github.com/subhanSahebShaik/subhanSahebShaik/blob/main/SUBHAN_SAHEB_SHAIK_RESUME.pdf)
+## You could see my [Resume](https://github.com/subhanSahebShaik/subhanSahebShaik/blob/main/SUBHAN_SAHEB_SHAIK_RESUME.pdf)
 
 ---
 
-<p widht="100%" align="center">Thanks for Visiting...</p>
+<p widht="100%" align="center"><h3>Thanks for Visiting...</h3></p>
 
