@@ -45,5 +45,5 @@ You could see my [Resume](https://github.com/subhanSahebShaik/subhanSahebShaik/b
 
 <hr/>
 
-<h3 style="align: center;">Thanks for Visiting...</h3>
+<h3 align="center;">Thanks for Visiting...</h3>
 
