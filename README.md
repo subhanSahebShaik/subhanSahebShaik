@@ -16,3 +16,5 @@ Here are some ideas to get you started:
 - 📫 How to reach me: 📧 subhansahebshaik609@gmail.com
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: Nothing to share now, we'll write it later...
+
+<hr/>
