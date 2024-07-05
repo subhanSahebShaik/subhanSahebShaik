@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/16d8a3238b.js" crossorigin="anonymous"></script>
+    <title>Subhan Saheb Shaik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-weight: bold;
+        }
+        #background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: flex;
+            flex-wrap: wrap;
+            filter: blur(2px);
+        }
+        .block {
+            width: 6px;
+            height: 10px;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .child-top-left, .child-bottom-right {
+            position: absolute;
+            width: 1.5px;
+            height: 9px;
+            background-color: skyblue;
+        }
+        .child-top-left {
+            top: 0;
+            left: 0;
+        }
+        .child-bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        .mirror .child-top-left {
+            top: auto;
+            bottom: 0;
+            left: 0;
+        }
+        .mirror .child-bottom-right {
+            bottom: auto;
+            top: 0;
+            right: 0;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .connect, .sections {
+            width: 80vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .sections > button {
+            border: 0;
+            padding: 5px;
+            background: transparent;
+            cursor: pointer;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .modal-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100vw - 20px);
+            height: calc(100vh - 50px);
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 2;
+            flex-direction: column;
+            padding-top: 30px; /* Extra space for close button */
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            background: none;
+            border: none;
+        }
+        .modal-content {
+            overflow-y: auto;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .connect > a{
+            text-decoration: none;
+            color: black;
+        }
+        .achievement-badges div{
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            min-height: 150px;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            font-weight: normal;
+            margin: 20px;
+            text-wrap: wrap;
+        }
+        .achievement-badges div img{
+            height: 70px;
+        }
+        .connect a i{
+            font-size: 25px;
+        }
+        .ga-maamli-regular {
+            font-family: "Ga Maamli", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .dancing-script-text {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .dm-serif-display-regular {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+        }
+        .sections button{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        @media screen and (max-width: 700px) {
+            #background-container {
+                filter: blur(1px);
+            }
+            .child-top-left, .child-bottom-right {
+                width: 1px;
+                height: 8px;
+            }
+            .greet > h1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: center;
+            }
+            .modal-container {
+                width: calc(100vw - 20px);
+                height: calc(100vh - 100px);
+            }
+            .achievement-badges div{
+                max-width: 40vw;
+                height: auto;
+                font-size: 10px;
+            }
+            .achievement-badges div img{
+                height: 50px;
+                max-width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="background-container"></div>
+    <div id="content">
+        <div class="greet">
+            <h1 style="word-spacing: 5px; letter-spacing: 2px" class="dm-serif-display-regular">
+                <span style="font-size: 20px; text-decoration: none" class="dancing-script-text">Hey, It's </span>
+                Subhan Saheb Shaik
+            </h1>
+        </div>
+        <div class="connect">
+            <a href="https://www.linkedin.com/in/subhan-saheb-shaik" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/subhanSahebShaik" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:shaiksubhansaheb609@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919848693918"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <div class="sections">
+            <button data-content="
+            <div style='padding: 15px;'>
+                <div style='font-weight: normal;'>
+                    <h2 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Intern, Orion Governance
+                        <span style='font-weight: normal; font-size:15px;'>Feb'24 - Present</span>
+                    </h2>
+                    <ul>
+                        <li>Working around Data Governance to implement </li>
+                    </ul>
+                </div>
+            </div>
+            ">Experience</button>
+            <button data-content="
+            <div style='padding: 15px;'>
+                <h3 style='text-align:center;'>Educatoin History</h3>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        B.Tech Honors in Computer Science and Engineering
+                        <span style='font-weight: normal; font-size:15px;'>2020 - 2024</span>
+                    </h3>
+                    <p>Sri Vasavi Engineering College, Tadepalligudem</p>
+                    <p>8.88 CGPA</p>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Intermediate in M.P.C.
+                        <span style='font-weight: normal; font-size:15px;'>2018 - 2020</span>
+                    </h3>
+                    <p>Sri Chaitanya Boys Jr. College, Vijayawada</p>
+                    <p>9.80 CGPA</p>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Secondary School
+                        <span style='font-weight: normal; font-size:15px;'>2018 - 2020</span>
+                    </h3>
+                    <p>MSRZP High School, Ananthapalli</p>
+                    <p>9.50 CGPA</p>
+                </div>
+                <hr/>
+            </div>
+            ">Education</button>
+            <button data-content="
+            <div style='padding: 15px;'>
+                <h3 style='text-align:center;'>Projects Worked On</h3>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Deep Fake Detection Using Deep Learning
+                        <span style='font-weight: normal; font-size:15px;'>Django, Deep Learning, LSTM, CNN, REST API</span>
+                    </h3>
+                    <ul>
+                        <li>Detects deep fake videos by comparing frame features using LSTM, accessible via browser or API, even from a terminal. </li>
+                        <li>Detects deep fake videos by comparing frame features using LSTM, accessible via browser or API, even from a terminal. </li>
+                        <li>Detects deep fake videos by comparing frame features using LSTM, accessible via browser or API, even from a terminal. </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Phishing URL Classification Using Machine Learning
+                        <span style='font-weight: normal; font-size:15px;'>Django, Machine Learning, React JS, CORS REST API</span>
+                    </h3>
+                    <ul>
+                        <li>Quickly assesses URL legitimacy using Django backend and ReactJS frontend for a seamless experience. </li>
+                        <li>Quickly assesses URL legitimacy using Django backend and ReactJS frontend for a seamless experience. </li>
+                        <li>Quickly assesses URL legitimacy using Django backend and ReactJS frontend for a seamless experience. </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Faculty Vault
+                        <span style='font-weight: normal; font-size:15px;'>Django, Postgres DB, Bootstrap, JS</span>
+                    </h3>
+                    <ul>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        Mobile Price Prediction Using Machine Learning
+                        <span style='font-weight: normal; font-size:15px;'>Django, Machine Learning, Python (Pandas)</span>
+                    </h3>
+                    <ul>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        The Tianzhu 
+                        <span style='font-weight: normal; font-size:15px;'>Django, SQLite3, Python, HTML, CSS, DTL</span>
+                    </h3>
+                    <ul>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div style='font-weight: normal;'>
+                    <h3 style='display:flex;align-items:center; justify-content: space-between;'>
+                        E - Plastic Management System
+                        <span style='font-weight: normal; font-size:15px;'>Django, SQLite3, Python</span>
+                    </h3>
+                    <ul>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                        <li>Faculty Vault provides an easy-to-access and easy-to-use UI/UX to maintain faculty data for an educational institution. </li>
+                    </ul>
+                </div>
+                <hr/>
+            </div>
+            ">Projects</button>
+            <button data-content="
+            <div>
+                <h2>Skills Content</h2>
+                <p>Details about skills...</p>
+            </div>
+            ">Skills</button>
+            <button data-content="
+            <div style='padding: 15px;'>
+                <h3 style='text-align:center;'>Achievements</h3>
+                <hr/>
+                <div style='display:flex; flex-wrap: wrap; justify-content: space-evenly;' class='achievement-badges'>
+                    <div>
+                        <img src='https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main'  />
+                        <p><b>Microsoft Certified: Azure AI Fundamentals</b><br/>Microsoft<br/>Issued Jun 2024<br/>ID BA3601399CD6046C</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Cyber Security and Privacy</b><br/>NPTEL<br/>Issued Nov 2023<br/>ID NPTEL23CS127S547500513</p>
+                    </div>
+                    <div>
+                        <img src='https://www.wipro.com/content/dam/nexus/staticsites/homepage/header/Wipro_Primary%20Logo_Color_RGB.svg'  />
+                        <p><b>Java FullStack</b><br/>Wipro<br/>Issued Oct 2023</p>
+                    </div>
+                    <div>
+                        <img src='https://www.freecodecamp.org/favicon-32x32.png'  />
+                        <p><b>Foundational C# with MicroSoft</b><br/>FreeCodeCamp<br/>Issued Sep 2023</p>
+                    </div>
+                    <div>
+                        <img src='https://skillsbuild.skillsnetwork.site/assets/sn-logo-c73aade2cb7cdb5bfe2d48d395d8288ffe58f3dfdefb55497b0baf84932c4e09.png'  />
+                        <p><b>Big Data 101</b><br/>IBM Skills Build<br/>Issued Jun 2023<br/>ID 4868cf38708542dda799a52188faf3f3</p>
+                    </div>
+                    <div>
+                        <img src='https://skillsbuild.skillsnetwork.site/assets/sn-logo-c73aade2cb7cdb5bfe2d48d395d8288ffe58f3dfdefb55497b0baf84932c4e09.png'  />
+                        <p><b>Hadoop 101</b><br/>IBM Skills Build<br/>Issued Jun 2023<br/>ID eee9e35659a34305a3f2db9bcf16ffd3</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Data Analytics with Python</b><br/>NPTEL<br/>Issued Apr 2023<br/>ID NPTEL23CS08S54710068</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Deep Learning</b><br/>NPTEL<br/>Issued Apr 2023<br/>ID NPTEL23CS24S44710186</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Introduction to Internet of Things</b><br/>NPTEL<br/>Issued Apr 2023<br/>ID NPTEL23CS51S64710194</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Privacy and Security in Online Social Media</b><br/>NPTEL<br/>Issued Apr 2023<br/>ID NPTEL23CS13S34710099</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg'  />
+                        <p><b>Cloud Computing and Distributed Systems</b><br/>Issued Mar 2023<br/>ID NPTEL23CS27S45660165</p>
+                    </div>
+                    <div>
+                        <img src='https://www.paloaltonetworks.com/etc/clientlibs/pan/img/favicons2020/apple-touch-icon-60x60.png'  />
+                        <p><b>Fundamentals of Cloud Security</b><br/>Palo Alto Networks<br/>Issued Mar 2023<br/>ID 249138113</p>
+                    </div>
+                    <div>
+                        <img src='https://www.paloaltonetworks.com/etc/clientlibs/pan/img/favicons2020/apple-touch-icon-60x60.png'  />
+                        <p><b>Fundamentals of Network Security</b><br/>Palo Alto Networks<br/>Issued Mar 2023<br/>ID 249138098</p>
+                    </div>
+                    <div>
+                        <img src='https://www.paloaltonetworks.com/etc/clientlibs/pan/img/favicons2020/apple-touch-icon-60x60.png'  />
+                        <p><b>Fundamentals of SOC(Security Operations Center)</b><br/>Palo Alto Networks<br/>Issued Mar 2023<br/>ID 249138127</p>
+                    </div>
+                    <div>
+                        <img src='https://www.paloaltonetworks.com/etc/clientlibs/pan/img/favicons2020/apple-touch-icon-60x60.png'  />
+                        <p><b>Introduction to Cyber Security</b><br/>Palo Alto Networks<br/>Issued Mar 2023<br/>ID 249138072</p>
+                    </div>
+                    <div>
+                        <img src='https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png'  />
+                        <p><b>The Fundamentals of Digital Marketing</b><br/>Google Digital Garage<br/>Issued Jan 2023</p>
+                    </div>
+                    <div>
+                        <img src='https://archive.nptel.ac.in/assets/nptel_assets/images/nptellogo.jpg' />
+                        <p><b>Data Science For Engineers</b><br/>NPTEL<br/>Issued Sep 2022<br/>ID NPTEL22CS72514550179</p>
+                    </div>
+                    <div>
+                        <img src='https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png'  />
+                        <p><b>Java(Basic) Certification</b><br/>HackerRank<br/>Issued Jul 2022<br/>ID D07EA0FE3564</p>
+                    </div>
+                    <div>
+                        <img src='https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png'  />
+                        <p><b>SQL(Basic) Certification</b><br/>HackerRank<br/>Issued Jun 2022<br/>ID 38B2207755E3</p>
+                    </div>
+                    <div>
+                        <img src='https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png'  />
+                        <p><b>Problem Solving(Basic) Certification</b><br/>HackerRank<br/>Issued Apr 2022<br/>ID 2B581286FE87</p>
+                    </div>
+                    <div>
+                        <img src='https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png'  />
+                        <p><b>Python(Basic) Certification</b><br/>HackerRank<br/>Issued Sep 2021<br/>ID 4C27838C7621</p>
+                    </div>
+                </div>
+            </div>
+            ">Achievements</button>
+        </div>
+        <div class="thanku">
+            <p class="ga-maamli-regular">Thanks for Visiting...</p>
+        </div>
+    </div>
+    <script>
+        function createBlock(isMirrored) {
+            const block = document.createElement("div");
+            block.classList.add("block");
+            if (isMirrored) {
+                block.classList.add("mirror");
+            }
+
+            const topLeft = document.createElement("div");
+            topLeft.classList.add("child-top-left");
+
+            const bottomRight = document.createElement("div");
+            bottomRight.classList.add("child-bottom-right");
+
+            block.appendChild(topLeft);
+            block.appendChild(bottomRight);
+
+            return block;
+        }
+
+        function fillPageWithPattern() {
+            const container = document.getElementById("background-container");
+            const numBlocksAcross = Math.ceil(window.innerWidth / 5);
+            const numBlocksDown = Math.ceil(window.innerHeight / 10);
+
+            for (let row = 0; row < numBlocksDown; row++) {
+                for (let col = 0; col < numBlocksAcross; col++) {
+                    const isOdd = (row * numBlocksAcross + col) % 2 !== 0;
+                    container.appendChild(createBlock(isOdd));
+                }
+            }
+        }
+
+        window.onload = fillPageWithPattern;
+        window.onresize = () => {
+            document.getElementById("background-container").innerHTML = "";
+            fillPageWithPattern();
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".sections > button");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const content = button.getAttribute("data-content");
+
+                    const modal = document.createElement("div");
+                    modal.classList.add("modal-container");
+
+                    const modalClose = document.createElement("button");
+                    modalClose.classList.add("modal-close");
+                    modalClose.innerHTML = "&times;";
+                    modalClose.addEventListener("click", () => {
+                        modal.style.display = "none";
+                        document.body.removeChild(modal);
+                    });
+
+                    const modalContent = document.createElement("div");
+                    modalContent.classList.add("modal-content");
+                    modalContent.innerHTML = content;
+
+                    modal.appendChild(modalClose);
+                    modal.appendChild(modalContent);
+
+                    document.body.appendChild(modal);
+                    modal.style.display = "flex";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
