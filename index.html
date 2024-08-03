@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta name="description" content="Learn how to edit/create effective title tags for better SEO results." />
+    <meta
+      name="description"
+      content="Learn how to edit/create effective title tags for better SEO results."
+    />
     <script
       src="https://kit.fontawesome.com/16d8a3238b.js"
       crossorigin="anonymous"
@@ -126,7 +129,7 @@
         display: none;
         z-index: 2;
         flex-direction: column;
-        padding-top: 30px; /* Extra space for close button */
+        padding-top: 30px;
       }
       .modal-close {
         position: absolute;
@@ -190,11 +193,12 @@
         text-decoration: none;
         color: black;
       }
-      .skill-images{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+      .star {
+        font-size: 24px;
+        color: grey;
+      }
+      .star.yellow {
+        color: yellow;
       }
       @media screen and (max-width: 700px) {
         #background-container {
@@ -417,66 +421,12 @@
           <div style='padding: 15px;'>
             <h3 style='text-align:center;'>Skills</h3>
             <hr/>
-            <div style='font-weight: normal;'>
-                <h3 style='display:flex;align-items:center; justify-content: space-between;'>
-                    Programming Languages
-                    <span style='font-weight: normal; font-size:15px;'>Started to learn from academics and worked towards implementing in real-world problems.</span>
-                </h3>
-                <div class='skill-images'>
-                  <i class='fa-brands fa-python'></i>
-                  <img src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png' height=100 />
-                  <img src='https://isocpp.org/assets/images/cpp_logo.png' height=100 />
-                </div>
+            <div>
+              <div class='skill_container'>
+                <i class='fa-brands fa-python'></i>
+                <div class='star-container' data-rating='3'></div>
+              </div>
             </div>
-            <hr/>
-            <div style='font-weight: normal;'>
-                <h3 style='display:flex;align-items:center; justify-content: space-between;'>
-                    Query Language
-                    <span style='font-weight: normal; font-size:15px;'>Started to learn from academics and worked towards implementing in real-world problems.</span>
-                </h3>
-                <div class='skill-images'>
-                  <img src='https://www.python.org/static/apple-touch-icon-precomposed.png' />
-                  <img src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png' height=100 />
-                  <img src='https://isocpp.org/assets/images/cpp_logo.png' height=100 />
-                </div>
-            </div>
-            <hr/>
-            <div style='font-weight: normal;'>
-                <h3 style='display:flex;align-items:center; justify-content: space-between;'>
-                    Frameworks
-                    <span style='font-weight: normal; font-size:15px;'>Started to learn from academics and worked towards implementing in real-world problems.</span>
-                </h3>
-                <div class='skill-images'>
-                  <img src='https://www.python.org/static/apple-touch-icon-precomposed.png' />
-                  <img src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png' height=100 />
-                  <img src='https://isocpp.org/assets/images/cpp_logo.png' height=100 />
-                </div>
-            </div>
-            <hr/>
-            <div style='font-weight: normal;'>
-                <h3 style='display:flex;align-items:center; justify-content: space-between;'>
-                    Web Technologies
-                    <span style='font-weight: normal; font-size:15px;'>Started to learn from academics and worked towards implementing in real-world problems.</span>
-                </h3>
-                <div class='skill-images'>
-                  <img src='https://www.python.org/static/apple-touch-icon-precomposed.png' />
-                  <img src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png' height=100 />
-                  <img src='https://isocpp.org/assets/images/cpp_logo.png' height=100 />
-                </div>
-            </div>
-            <hr/>
-            <div style='font-weight: normal;'>
-                <h3 style='display:flex;align-items:center; justify-content: space-between;'>
-                    Soft Skills
-                    <span style='font-weight: normal; font-size:15px;'>Started to learn from academics and worked towards implementing in real-world problems.</span>
-                </h3>
-                <div class='skill-images'>
-                  <img src='https://www.python.org/static/apple-touch-icon-precomposed.png' />
-                  <img src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png' height=100 />
-                  <img src='https://isocpp.org/assets/images/cpp_logo.png' height=100 />
-                </div>
-            </div>
-            <hr/>
         </div>
             "
         >
@@ -652,6 +602,29 @@
           });
         });
       });
+      function renderStars(container, number) {
+        container.innerHTML = "";
+
+        for (let i = 1; i <= 5; i++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "★";
+
+          if (i <= number) {
+            star.classList.add("yellow");
+          }
+
+          container.appendChild(star);
+        }
+      }
+
+      window.onload = function () {
+        const starContainers = document.querySelectorAll(".star-container");
+        starContainers.forEach((container) => {
+          const rating = parseInt(container.getAttribute("data-rating"));
+          renderStars(container, rating);
+        });
+      };
     </script>
   </body>
 </html>
