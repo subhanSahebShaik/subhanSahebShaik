@@ -1,48 +1,100 @@
-### Hi there 👋. I'm
+<!-- Profile Header -->
+<div align="center">
+  
+# 👋 Hi, I'm **Shaik Subhan Saheb**
 
-## Subhan
+### 🚀 Test Engineer | AI & Automation Developer | Open-Source Contributor
 
-<!--
-**subhanSahebShaik/subhanSahebShaik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Profile Views](https://komarev.com/ghpvc/?username=subhanSahebShaik&label=Profile%20Views&color=2c2c2c&style=flat)
+[![GitHub followers](https://img.shields.io/github/followers/subhanSahebShaik?label=Followers&style=social)](https://github.com/subhanSahebShaik)
 
-Here are some ideas to get you started:
+</div>
 
--->
+---
 
-- 🔭 I’m currently working as an Intern at Orion Governance
-- 🌱 I’m currently learning Python and SQL
-- 👯 I’m looking to collaborate on Python and it's related libraries like Django, scikit-learn...
-- 🤔 I’m looking for help with the thing you're are good at.😉
-- 📫 How to reach me: 📧 subhansahebshaik609@gmail.com
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: Nothing to share now, we'll write it later...
+### 🧠 About Me  
 
-<hr/>
+- 💼 **Test Engineer** at a **Product-based Company**, focusing on building automated systems for **UI testing, analytics validation**, and **LLM-assisted workflows**.  
+- 🔍 Passionate about **bridging product and testing teams** using intelligent graph-based models and automation pipelines.  
+- 🧩 Experienced in **Python**, **Django**, **Playwright**, **SQL**, **PyTorch**, and **React**.  
+- ✨ Exploring **AI-driven test generation**, **Model Context Protocol (MCP)**, and **local LLM integrations**.  
+- 🧑‍🏫 Trained interns in **Django** and **Python** development across multiple organizations.  
+- ✍️ Published an article on **Dynamic Subdomains in Django** on [GeeksforGeeks](https://www.geeksforgeeks.org/author/subhansahebshaik/).  
+- 📫 Reach me at: **subhansahebshaik609@gmail.com**
 
-## My Works
+---
 
-1. [Deep Fake Detection Using Deep Learning](https://github.com/subhanSahebShaik/detectify)
+### 🧰 Tech Stack  
 
-Detectify is a deep learning system that detects AI-generated fake videos (deepfakes) using CNN and LSTM-based RNNs. Trained on datasets like Face-Forensic++, Deepfake Detection Challenge, and Celeb-DF, Detectify offers real-time video manipulation detection to combat misinformation and misuse of deepfake technology.
+| Domain | Tools / Frameworks |
+|--------|--------------------|
+| **Languages** | Python, SQL, JavaScript, TypeScript |
+| **Frameworks** | Django, Playwright, React |
+| **AI & ML** | PyTorch, scikit-learn, OpenAI / LM Studio SDK |
+| **Testing & Automation** | Playwright, PyTest, Postman, CI/CD |
+| **Databases** | PostgreSQL, Redshift, MySQL |
+| **Visualization & Reporting** | Power BI, JSON Cracker, Graph-based Modeling |
+| **Other Tools** | Git, Docker, Informatica PowerMart, DataStage |
 
-2. [Phishing URL Classififer Using Machine Learning](https://github.com/subhanSahebShaik/facultyvault)
+---
 
-Utilizing machine learning and an accessible API, this tool swiftly identifies phishing URLs. Enhance cybersecurity with streamlined URL classification and robust API integration.
+### 📘 Featured Projects  
 
-3. [Faculty Vault](https://github.com/subhanSahebShaik/facultyvault)
+#### 🎭 [DeepFake Detection Using Deep Learning](https://github.com/subhanSahebShaik/detectify)
+A deep learning system that detects AI-generated fake videos using **CNN + LSTM** architectures.  
+Trained on **FaceForensics++**, **Celeb-DF**, and **Deepfake Detection Challenge** datasets.  
+🧩 Combats misinformation by identifying video manipulations in real-time.
 
-Manage Faculty data in an easy way, with interactive and easy to use user interface. Even you can download profiels into PDFs and many more... Explore into this Django project to manage profiles.
+#### 🛡️ [Phishing URL Classifier Using ML](https://github.com/subhanSahebShaik/phishing-url-classifier)
+Built a **machine learning-based phishing detection system** with API integration for web safety.  
+Uses URL feature extraction and classification models for quick and reliable detection.
 
-<hr/>
+#### 🧑‍🏫 [Faculty Vault (Django App)](https://github.com/subhanSahebShaik/facultyvault)
+A **Django-based data management system** for handling faculty records.  
+Features include **PDF exports**, profile management, and a clean admin interface.
 
-## Paper Publications
+---
 
-1. [Deep Fake Detection USing Deep Learning](https://github.com/subhanSahebShaik/detectify/blob/main/Paper_Publication.pdf)
+### 🧾 Research & Publications  
 
+- 📄 [DeepFake Detection Using Deep Learning](https://github.com/subhanSahebShaik/detectify/blob/main/Paper_Publication.pdf)  
+  Published work demonstrating advanced detection architectures for fake video content.
 
+---
 
-### You could see my [Resume](https://github.com/subhanSahebShaik/subhanSahebShaik/blob/main/SUBHAN_SAHEB_SHAIK_RESUME.pdf)
+### 🌍 My Recent Focus  
 
+- 🧠 Developing a **graph-based model** to represent UI components and generate intelligent test cases.  
+- 🤖 Integrating **LLMs** via **MCP** and **Playwright** for **autonomous test generation**.  
+- 🧮 Building a pipeline for **end-to-end data flow understanding** across SQL, Power BI, and Informatica.
 
-<p widht="100%" align="center">Thanks for Visiting...</p>
+---
 
+### 📊 GitHub Stats  
+
+<div align="center">
+
+![Subhan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=subhanSahebShaik&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=subhanSahebShaik&layout=compact&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=subhanSahebShaik&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+### 🧩 Connect with Me  
+
+<p align="center">
+  <a href="mailto:subhansahebshaik609@gmail.com"><img src="https://img.shields.io/badge/Email-2c2c2c?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/shaik-subhan-saheb"><img src="https://img.shields.io/badge/LinkedIn-2c2c2c?style=for-the-badge&logo=linkedin&logoColor=0A66C2" /></a>
+  <a href="https://github.com/subhanSahebShaik"><img src="https://img.shields.io/badge/GitHub-2c2c2c?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.geeksforgeeks.org/author/subhansahebshaik/"><img src="https://img.shields.io/badge/GeeksforGeeks-2c2c2c?style=for-the-badge&logo=geeksforgeeks&logoColor=2F8D46" /></a>
+</p>
+
+---
+
+<div align="center">
+  
+✨ *“Building smarter testing systems that think like testers and scale like machines.”* ✨
+
+</div>
