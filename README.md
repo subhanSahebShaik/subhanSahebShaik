@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm **Shaik Subhan Saheb**
 
-### 💡 Builder • AI & Automation Developer • Full-Stack Innovator  
+### 💡 AI & Automation Engineer • Full-Stack Developer • GenAI Builder  
 
 ![Profile Views](https://komarev.com/ghpvc/?username=subhanSahebShaik&label=Profile%20Views&color=2c2c2c&style=flat)
 [![GitHub followers](https://img.shields.io/github/followers/subhanSahebShaik?label=Followers&style=social)](https://github.com/subhanSahebShaik)
@@ -13,15 +13,15 @@
 
 ### 🧭 About Me  
 
-I’m a **software engineer passionate about building systems that think, automate, and impact**.  
-After starting my journey in **test automation**, I discovered my calling — **developing intelligent and practical tools** that simplify engineering workflows, improve testing productivity, and empower teams through innovation.
+I’m a **software engineer focused on AI automation and full-stack product development**.  
+I started in **test automation** and grew into building **intelligent tools** that simplify engineering workflows, accelerate releases, and improve product quality.
 
-I’m now focused on **AI-driven development**, **Generative Automation**, and **creating meaningful software** that bridges the gap between humans and machines.
+Today I focus on **GenAI product development**, **automation frameworks**, and **scalable web applications** that bridge humans and machines.
 
-- 🧠 Currently exploring **Generative AI**, **MCP (Model Context Protocol)**, and **autonomous testing systems**  
-- 🧩 Experienced with **Python**, **Django**, **TypeScript**, **Playwright**, and **React.js**  
-- 🧱 Building **GenFlow** — a Generative AI-powered solution to revolutionize test creation  
-- ✍️ Published author of *“Detection of Deep Fakes Using Deep Learning”* in i-manager Journal of Image Processing  
+- 🧠 Exploring **Generative AI**, **MCP (Model Context Protocol)**, and AI-first testing workflows  
+- 🧩 Skilled in **Python**, **Django**, **TypeScript**, **Playwright**, and **React.js**  
+- 🧱 Building **GenFlow** — a GenAI solution to reimagine test creation and UI flows  
+- ✍️ Published author: *“Detection of Deep Fakes Using Deep Learning”* (i-manager Journal)  
 - ☁️ **Microsoft Certified (AI-900: Azure AI Fundamentals)**  
 - 📫 Reach me: **shaiksubhansaheb609@gmail.com**
 
@@ -34,7 +34,7 @@ I’m now focused on **AI-driven development**, **Generative Automation**, and *
 | **Languages** | Python, SQL, TypeScript, JavaScript |
 | **Backend** | Django, Django REST Framework |
 | **Frontend** | React.js, HTML, CSS |
-| **AI/ML** | PyTorch, scikit-learn, LM Studio, OpenAI API |
+| **AI/ML** | PyTorch, scikit-learn, LLM APIs, LM Studio |
 | **Automation & Testing** | Playwright, PyTest, CI/CD Pipelines |
 | **Cloud & DevOps** | Docker, GitHub Actions, GitLab CI/CD |
 | **Databases** | PostgreSQL, SQLite, Redshift |
@@ -47,8 +47,8 @@ I’m now focused on **AI-driven development**, **Generative Automation**, and *
 #### 🧠 [GenFlow](https://github.com/subhanSahebShaik)
 *Reimagining how teams write tests and visualize applications.*
 
-A full-stack innovation combining **Chrome Extension**, **Django REST Framework**, and **Generative AI** to replace traditional test lists with **flow-based application maps**.  
-Designed to **auto-generate pre-aligned test scripts and locators**, enabling engineers to **increase automation efficiency by up to 50%**.
+A full-stack platform combining **Chrome Extension**, **Django REST Framework**, and **Generative AI** to replace traditional test lists with **flow-based application maps**.  
+Designed to **auto-generate pre-aligned test scripts and locators**, enabling teams to ship faster and improve coverage.
 
 #### 🎭 [DeepFake Detection Using Deep Learning](https://github.com/subhanSahebShaik/detectify)
 An AI-powered web app that detects manipulated videos using **CNN + LSTM models**.  
@@ -84,8 +84,8 @@ A **Django + PostgreSQL** platform to manage academic data with **PDF export**, 
 <div align="center">
 
 ![Subhan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=subhanSahebShaik&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=subhanSahebShaheb&layout=compact&theme=tokyonight&hide_border=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=subhanSahebShaheb&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=subhanSahebShaik&layout=compact&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=subhanSahebShaik&theme=tokyonight&hide_border=true)
 
 </div>
 
